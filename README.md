@@ -43,6 +43,16 @@ $$z_{t}^{out} = \mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix}, t, \tau_{\theta}(c_{\
 
 
 
+## Example Results
+
+* Visual comparison between our method and the competitors.
+
+
+<p align="center">
+  <img src=" " width="100%" alt="Visual comparison between our method and competitors">
+</p>
+
+
 ## Inference
 
 1. Dataset Preparation: [BrushBench](https://github.com/TencentARC/BrushNet)
@@ -64,11 +74,4 @@ Python testceshi.py
 
 
 
-## Example Results
 
-* Visual comparison between our method and the competitors.
-
-
-<p align="center">
-  <img src=" " width="100%" alt="Visual comparison between our method and competitors">
-</p>
