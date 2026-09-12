@@ -51,11 +51,7 @@ $$z_{t}^{out} = \mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix}, t, \tau_{\theta}(c_{\
 
 * Visual comparison between our method and the competitors.
 
-
-<p align="center">
-  <img src=" " width="100%" alt="Visual comparison between our method and competitors">
-  
-</p>
+<img width="967" height="538" alt="image" src="https://github.com/user-attachments/assets/eb975fb5-939b-4541-b313-788afd9fed73" />
 
 
 ## Inference
