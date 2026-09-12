@@ -1,4 +1,4 @@
-<img width="872" height="50" alt="image" src="https://github.com/user-attachments/assets/e9514df8-6acc-4c65-8967-43a378660951" /># SMR-Diff
+# SMR-Diff
 
 **论文标题**: SMR-DIFF: MASK-AWARE SPATIAL MIXING AND DEFECT REPAIR FOR TEXT-GUIDED IMAGE INPAINTING
 
