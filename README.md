@@ -27,19 +27,21 @@ In this paper, we propose a Spatial Mixing and Repair Diffusion framework, dubbe
 
 * **Three-Stage Mask-Aware Spatial Mixing Diffusion Framework:**
 
- * **Three-Stage Mask-Aware Spatial Mixing Diffusion Framework:**
+  * **Null-Text Reference Denoising Process:**
 
-  * **Null-Text Reference Denoising Process:** $\hat{z}_{t}^{nrl}=\mathcal{D}_{\theta}^{MSA,NCA}(z_{t}^{nrl},t,\tau_{\theta}(c_{\emptyset});M)$
+    $$\hat{z}_{t}^{nrl} = \mathcal{D}_{\theta}^{MSA,NCA}(z_{t}^{nrl}, t, \tau_{\theta}(c_{\emptyset}); M)$$
 
-    $$z_{t}^{blend}=M_{t}\odot\hat{z}_{t}^{nrl}+(1-M_{t})\odot z_{t}^{ref}$$
+    $$z_{t}^{blend} = M_{t} \odot \hat{z}_{t}^{nrl} + (1 - M_{t}) \odot z_{t}^{ref}$$
 
-  * **Text-Guided Global Spatial Denoising Process:** $z_{t}^{text}=\mathcal{D}_{\theta}^{SA,TCA}(z_{t}^{blend},t,\tau_{\theta}(c))$
+  * **Text-Guided Global Spatial Denoising Process:**
 
-    $$z_{t}^{mix}=(1-M_{t})\odot z_{t}^{nrl-1}+M_{t}\odot z_{t}^{text}$$
+    $$z_{t}^{text} = \mathcal{D}_{\theta}^{SA,TCA}(z_{t}^{blend}, t, \tau_{\theta}(c))$$
 
-  * **Null-Text Mask-Driven Refinement Process:** $z_{t}^{out}=\mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix},t,\tau_{\theta}(c_{\emptyset});M_{t})$
+    $$z_{t}^{mix} = (1 - M_{t}) \odot z_{t}^{nrl-1} + M_{t} \odot z_{t}^{text}$$
 
-* **Defect-Aware Post-Processing and Poisson Blending:** $I^{final} = \text{PoissonBlend}(I^{rep}, I, \Omega)$
+  * **Null-Text Mask-Driven Refinement Process:**
+
+    $$z_{t}^{out} = \mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix}, t, \tau_{\theta}(c_{\emptyset}); M_{t})$$
 
 
 
