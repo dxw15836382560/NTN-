@@ -1,0 +1,8 @@
+base_model==Stable Diffusion v1.5
+checkpoint==Realistic Vision V6.0
+image_resolution==512x512
+latent_resolution==64x64
+ddim_inversion_steps==1000
+sampling_steps==100
+lambda==0.6
+guidance_scale==7.5
