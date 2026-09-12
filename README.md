@@ -20,6 +20,7 @@ Text-guided image inpainting needs to coordinate two complementary priors: the r
 
 
 
+[fig_1v2.1.pdf](https://github.com/user-attachments/files/32146472/fig_1v2.1.pdf)
 
 ## Introduction
 
