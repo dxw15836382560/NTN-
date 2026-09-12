@@ -1,4 +1,4 @@
-# SMR-Diff
+<img width="872" height="50" alt="image" src="https://github.com/user-attachments/assets/e9514df8-6acc-4c65-8967-43a378660951" /># SMR-Diff
 
 **论文标题**: SMR-DIFF: MASK-AWARE SPATIAL MIXING AND DEFECT REPAIR FOR TEXT-GUIDED IMAGE INPAINTING
 
@@ -53,7 +53,10 @@ $$z_{t}^{out} = \mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix}, t, \tau_{\theta}(c_{\
 
 <img width="967" height="538" alt="image" src="https://github.com/user-attachments/assets/eb975fb5-939b-4541-b313-788afd9fed73" />
 
+* Quantitative results.
+<img width="973" height="342" alt="image" src="https://github.com/user-attachments/assets/ae87ab65-634b-434f-9778-327bef6d64d2" />
 
+  
 ## Inference
 
 1. Dataset Preparation: [BrushBench](https://github.com/TencentARC/BrushNet)
