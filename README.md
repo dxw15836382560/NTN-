@@ -57,7 +57,8 @@ $$z_{t}^{out} = \mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix}, t, \tau_{\theta}(c_{\
 <img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/ae87ab65-634b-434f-9778-327bef6d64d2" />
 
 * Ablation Studies.
-  <img width="900" height="400" alt="image" src="https://github.com/user-attachments/assets/7da22b8e-8f20-4c1d-a3a4-7a76c0e5785c" />
+ <img width="1380" height="432" alt="image" src="https://github.com/user-attachments/assets/18d892da-ca72-42be-843d-9957522791da" />
+
 
 ## Inference
 
