@@ -15,17 +15,33 @@
 ## Motivation
 
 Text-guided image inpainting needs to coordinate two complementary priors: the reference image provides structural and appearance information, while the text prompt guides semantic generation. Existing methods often combine them through rigid spatial composition or frequency-domain replacement, which may cause boundary discontinuities or limited text controllability. This motivates us to formulate image inpainting as a spatial information allocation problem. SMR-Diff performs mask-aware spatial mixing during diffusion sampling, preserving reference information in unmasked regions while introducing text-conditioned semantics into masked regions and ensuring smooth mask-boundary transitions.
-[fig_1v2 (1).pdf](https://github.com/user-attachments/files/32145681/fig_1v2.1.pdf)
 
 
 
 
 
 
+## Introduction
 
+In this paper, we propose a Spatial Mixing and Repair Diffusion framework, dubbed **SMR-Diff**, for text-guided image inpainting, by formulating image inpainting as a spatial information allocation problem, where reference-image information and text-conditioned semantics are selectively allocated across spatial regions during the diffusion process, while preserving unmasked regions, to circumvent two challenges in a row. Specifically, a null-text reference branch extracts structural and appearance information from unmasked regions, while a text-guided branch provides semantic cues for masked-region generation. Their contributions are progressively regulated through mask-aware spatial mixing and reference latent optimization, followed by a null-text mask-driven refinement stage to enhance spatial consistency and reduce reference-content interference. Finally, a defect-aware post-processing module with Poisson blending further corrects residual artifacts and improves boundary continuity. Extensive experiments on BrushBench and EditBench validate the superiority of SMR-Diff over state-of-the-art diffusion models for text-guided image inpainting.
 
+* **Three-Stage Mask-Aware Spatial Mixing Diffusion Framework:**
 
+  * **Null-Text Reference Denoising Process:**
+    $$\hat{z}_{t}^{nrl}=\mathcal{D}_{\theta}^{MSA,NCA}(z_{t}^{nrl},t,\tau_{\theta}(c_{\emptyset});M)$$
 
+    $$z_{t}^{blend}=M_{t}\odot\hat{z}_{t}^{nrl}+(1-M_{t})\odot z_{t}^{ref}$$
+
+  * **Text-Guided Global Spatial Denoising Process:**
+    $$z_{t}^{text}=\mathcal{D}_{\theta}^{SA,TCA}(z_{t}^{blend},t,\tau_{\theta}(c))$$
+
+    $$z_{t}^{mix}=(1-M_{t})\odot z_{t}^{nrl-1}+M_{t}\odot z_{t}^{text}$$
+
+  * **Null-Text Mask-Driven Refinement Process:**
+    $$z_{t}^{out}=\mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix},t,\tau_{\theta}(c_{\emptyset});M_{t})$$
+
+* **Defect-Aware Post-Processing and Poisson Blending:**
+  $$I^{final} = \text{PoissonBlend}(I^{rep}, I, \Omega)$$
 
 
 
