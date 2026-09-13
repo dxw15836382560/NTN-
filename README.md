@@ -1,14 +1,14 @@
 # SMR-Diff
 
-**论文标题**: SMR-DIFF: MASK-AWARE SPATIAL MIXING AND DEFECT REPAIR FOR TEXT-GUIDED IMAGE INPAINTING
+**Title**: SMR-DIFF: MASK-AWARE SPATIAL MIXING AND DEFECT REPAIR FOR TEXT-GUIDED IMAGE INPAINTING
 
-**作者**:
+**Writer**:
 * Xiaowei Duan¹
 * Yao Li¹†
 * Zhixiong Yang²*
 * Yajun Zhang¹*
 
-**单位**:
+**Organization**:
 * ¹ School of Software, Xinjiang University, Urumqi, China
 * ² School of Computer Science and Technology, Xinjiang University, Urumqi, China
 ---
