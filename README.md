@@ -17,7 +17,6 @@
 Text-guided image inpainting needs to coordinate two complementary priors: the reference image provides structural and appearance information, while the text prompt guides semantic generation. Existing methods often combine them through rigid spatial composition or frequency-domain replacement, which may cause boundary discontinuities or limited text controllability. This motivates us to formulate image inpainting as a spatial information allocation problem. SMR-Diff performs mask-aware spatial mixing during diffusion sampling, preserving reference information in unmasked regions while introducing text-conditioned semantics into masked regions and ensuring smooth mask-boundary transitions.
 
 
-<img width="1332" height="355" alt="image" src="https://github.com/user-attachments/assets/810b39c8-b5ed-48a3-97c7-a6161a9f0f92" />
 
 
 ## Introduction
