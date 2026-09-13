@@ -24,7 +24,7 @@ Text-guided image inpainting needs to coordinate two complementary priors: the r
 
 In this paper, we propose a Spatial Mixing and Repair Diffusion framework, dubbed **SMR-Diff**, for text-guided image inpainting, by formulating image inpainting as a spatial information allocation problem, where reference-image information and text-conditioned semantics are selectively allocated across spatial regions during the diffusion process, while preserving unmasked regions, to circumvent two challenges in a row. Specifically, a null-text reference branch extracts structural and appearance information from unmasked regions, while a text-guided branch provides semantic cues for masked-region generation. Their contributions are progressively regulated through mask-aware spatial mixing and reference latent optimization, followed by a null-text mask-driven refinement stage to enhance spatial consistency and reduce reference-content interference. Finally, a defect-aware post-processing module with Poisson blending further corrects residual artifacts and improves boundary continuity. Extensive experiments on BrushBench and EditBench validate the superiority of SMR-Diff over state-of-the-art diffusion models for text-guided image inpainting.
 
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4d121ebb-2f96-4fa3-8c22-99e8915b9d5d" />
+
 
 
 **Three-Stage Mask-Aware Spatial Mixing Diffusion Framework:**
