@@ -31,7 +31,7 @@ In this paper, we propose a Spatial Mixing and Repair Diffusion framework, dubbe
 
 $$\hat{z}_{t}^{nrl} = \mathcal{D}_{\theta}^{MSA,NCA}(z_{t}^{nrl}, t, \tau_{\theta}(c_{\emptyset}); M)$$
 
-$$z_{t}^{blend} = M_{t} \odot \hat{z}_{t}^{nrl} + (1 - M_{t}) \odot z_{t}^{ref}$$
+$$z_{t}^{blend} = (1 - M_{t}) \odot \hat{z}_{t}^{nrl} + M_{t} \odot z_{t}^{ref}$$
 
 **2. Text-Guided Global Spatial Denoising Process**
 
