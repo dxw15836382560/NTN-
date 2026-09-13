@@ -64,7 +64,7 @@ $$z_{t}^{out} = \mathcal{D}_{\theta}^{SA,NCA}(z_{t}^{mix}, t, \tau_{\theta}(c_{\
 
 ## Inference
 
-1. Dataset Preparation: [BrushBench](https://github.com/TencentARC/BrushNet)
+1. Dataset Preparation: [BrushBench](https://github.com/TencentARC/BrushNet) and  [EditBench](https://imagen.research.google/editor/)
 
 2. Pre-trained models: [Realistic Vision V6.0 B1](https://civitai.com/models/4201/realistic-vision-v60-b1?modelVersionId=501240)
 
